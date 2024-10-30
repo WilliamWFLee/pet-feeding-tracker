@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -34,6 +34,7 @@
     "eslint-plugin-playwright": "^2.0.0",
     "eslint-plugin-vue": "^9.29.0",
     "jsdom": "^25.0.1",
+    "nodemon": "^3.1.7",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.14",
@@ -45,5 +46,12 @@
     "semi": false,
     "singleQuote": true,
     "arrowParens": "avoid"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "app",
+      "./app.js"
+    ],
+    "delay": 2500
   }
 }

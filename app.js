@@ -10,6 +10,6 @@ app.use(bodyParser.json())
 app.use(cookieParser())
 app.use(morgan('dev'))
 
-app.use(indexRouter)
+app.use('/api', indexRouter)
 
 export default app

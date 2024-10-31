@@ -4,5 +4,7 @@ import app from '../app.js'
 import ViteExpress from 'vite-express'
 
 const port = process.env.PORT || 3000
+const host = process.env.HOST || 'localhost'
+const server = app.listen(port, host)
 
-ViteExpress.listen(app, port)
+ViteExpress.bind(app, server)

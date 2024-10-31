@@ -4,5 +4,8 @@
       "@/*": ["./src/*"]
     }
   },
+  "vueCompilerOptions": {
+    "plugins": ["@vue/language-plugin-pug"]
+  },
   "exclude": ["node_modules", "dist"]
 }

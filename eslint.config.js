@@ -1,5 +1,6 @@
 import js from '@eslint/js'
 import pluginVue from 'eslint-plugin-vue'
+import pluginVuePug from 'eslint-plugin-vue-pug'
 import pluginVitest from '@vitest/eslint-plugin'
 import pluginPlaywright from 'eslint-plugin-playwright'
 import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
@@ -17,6 +18,7 @@ export default [
 
   js.configs.recommended,
   ...pluginVue.configs['flat/essential'],
+  ...pluginVuePug.configs['vue3-recommended'],
 
   {
     ...pluginVitest.configs.recommended,

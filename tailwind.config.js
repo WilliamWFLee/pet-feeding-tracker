@@ -4,8 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'rich-black': '#001214',
-        'misty-rose': '#ECD5D8',
+        'magnolia': '#FAF0FA',
+        'night': '#0C1713',
+        'cambridge-blue': '#97C4AF',
+        'rose-taupe': '#815355',
       },
     },
   },

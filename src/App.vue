@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   header
     nav.flex.height-auto
       RouterLink.flex-auto.block.m-1.p-2(to="/") Home
-  main.m-2
+  main(class='m-4 md:m-6')
     RouterView
 </template>
 

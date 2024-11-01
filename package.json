@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon ./bin/www",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "NODE_ENV=production node ./bin/www",
     "test:unit": "vitest",
     "test:e2e": "playwright test",
     "lint": "eslint . --fix",

@@ -96,6 +96,9 @@ importers:
       vitest:
         specifier: ^2.1.3
         version: 2.1.4(jsdom@25.0.1)(sass@1.80.5)
+      vue-pug-plugin:
+        specifier: ^2.0.3
+        version: 2.0.3(pug@3.0.3)
 
 packages:
 
@@ -2159,6 +2162,11 @@ packages:
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
+
+  vue-pug-plugin@2.0.3:
+    resolution: {integrity: sha512-GiI1VoNDZveoX8PgIEjxLanNwGNUAbIbu0pe0jn4D6abObLqD6y8yJp5wCkqEBwfNq3a0TzwPO+gMC2QzKm9ow==}
+    peerDependencies:
+      pug: ^3.0.1
 
   vue-router@4.4.5:
     resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
@@ -4311,6 +4319,10 @@ snapshots:
       semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
+
+  vue-pug-plugin@2.0.3(pug@3.0.3):
+    dependencies:
+      pug: 3.0.3
 
   vue-router@4.4.5(vue@3.5.12(typescript@5.6.3)):
     dependencies:

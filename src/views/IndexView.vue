@@ -1,13 +1,14 @@
 <script setup>
 import PrimaryLinkButton from '@/components/PrimaryLinkButton.vue'
-import SecondaryLinkButton from '@/components/SecondaryLinkButton.vue'
+import { ArrowLongRightIcon } from '@heroicons/vue/16/solid'
 </script>
 
 <template lang="pug">
-  h1 Heading
-  h2 Subheading
-  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  .flex.justify-around.gap-1.my-5
-    PrimaryLinkButton(href='#') Primary Button
-    SecondaryLinkButton(href='#') Secondary Button
+  section.flex.flex-col.justify-center.mx-3(class='h-[75vh]')
+    h1.text-center.text-4xl.text-rose-taupe(class='sm:text-6xl') Pet Feeding Tracker
+    h2.text-center.text-xl.my-7(class='sm:text-3xl') Never forget to feed your pet again
+    .flex.flex-wrap.justify-around.gap-1.my-3
+      PrimaryLinkButton(to='#')
+        span Sign Up
+        ArrowLongRightIcon.inline.mx-1.size-5
 </template>

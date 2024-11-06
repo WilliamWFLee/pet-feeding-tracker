@@ -1,8 +1,8 @@
 <script setup>
-defineProps(['href', 'class'])
+defineProps(['to', 'class'])
 </script>
 
 <template lang="pug">
-  a.px-2.py-3.rounded-md.align-middle(:href, :class)
+  RouterLink.px-5.py-3.rounded-md.align-middle.flex.items-center(:to, :class)
     slot
 </template>

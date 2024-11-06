@@ -1,10 +1,10 @@
 <script setup>
 import LinkButton from './LinkButton.vue'
 
-defineProps(['href'])
+defineProps(['to'])
 </script>
 
 <template lang="pug">
-  LinkButton(:href, class='bg-cambridge-blue text-night' )
+  LinkButton.bg-cambridge-blue.text-night(:to)
     slot
 </template>

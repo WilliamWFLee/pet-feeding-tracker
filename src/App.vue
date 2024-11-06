@@ -1,11 +1,10 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import NavigationBar from '@/components/NavigationBar.vue'
 </script>
 
 <template lang="pug">
   header
-    nav.flex.height-auto
-      RouterLink.flex-auto.block.m-1.p-2(to="/") Home
+    NavigationBar
   main(class='m-4 md:m-6')
     RouterView
 </template>

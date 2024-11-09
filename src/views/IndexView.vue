@@ -1,5 +1,6 @@
 <script setup>
-import PrimaryLinkButton from '@/components/PrimaryLinkButton.vue'
+import PrimaryLinkButton from '@/components/buttons/PrimaryLinkButton.vue'
+
 import { ArrowLongRightIcon } from '@heroicons/vue/16/solid'
 </script>
 
@@ -10,5 +11,5 @@ import { ArrowLongRightIcon } from '@heroicons/vue/16/solid'
     .flex.flex-wrap.justify-around.gap-1.my-3
       PrimaryLinkButton(to='#')
         span Sign Up
-        ArrowLongRightIcon.inline.mx-1.size-5
+        ArrowLongRightIcon.mx-1.size-5
 </template>

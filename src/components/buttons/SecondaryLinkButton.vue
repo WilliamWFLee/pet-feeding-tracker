@@ -1,10 +1,8 @@
 <script setup>
 import LinkButton from './LinkButton.vue'
-
-defineProps(['to'])
 </script>
 
 <template lang="pug">
-  LinkButton.bg-cambridge-blue.text-night(:to)
+  LinkButton.bg-rose-taupe.text-magnolia
     slot
 </template>

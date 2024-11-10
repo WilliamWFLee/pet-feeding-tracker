@@ -8,5 +8,3 @@ import NavigationBar from '@/components/NavigationBar.vue'
   main(class='m-4 md:m-6')
     RouterView
 </template>
-
-<style scoped></style>
